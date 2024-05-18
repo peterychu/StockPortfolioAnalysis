@@ -1,0 +1,8 @@
+CU = read.csv("cumuAssetRet.csv", header=TRUE)
+plot(CU$date, CU$P1cumPct, type = "line", col=1, ylim=c(-50,900), xlab = "Month", ylab = "Return (%)")
+lines(CU$date, CU$P2cumPct, type="line", col = 2)
+lines(CU$date, CU$P3cumPct, type="line", col = 3)
+lines(CU$date, CU$P4cumPct, type="line", col = 4)
+grid(nx = NULL, lty="dashed")
+title("Cumulative Portfolios Returns")
+legend(2005,900,legend=c("Diversified (by asset class) Portfolio","Equal Weight Portfolio","Market Portfolio","Diversified (by industry sector) Portfolio"),  fill = c("1","2","3","4") )
