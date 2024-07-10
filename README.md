@@ -57,7 +57,7 @@ The first data set to be analyzed was the life expectancy data from the Universi
 
 Oftentimes one piece of data such as flu vaccinations had multiple columns including percent of population, a numerator, a denominator, and a handful of confidence level columns. For this analysis, the percent of population was the most effective column type to be used. Some additional cleaning involved steps were that the second row in the data was not actual data and about 50 rows did not have life expectancy estimates. Given that life expectancy is the outcome variable, those rows were removed.
 
-![](Aspose.Words.5b431f01-7ae1-4ecd-b118-fe1512175c6f.002.jpeg)
+![Test](Figure 1.jpeg)
 
 Figure 2: Life Expectancy Histogram
 
