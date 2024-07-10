@@ -26,7 +26,7 @@ Retirement is one of the largest lifestyle changes that an individual undergoes.
 
 Not only does a larger amount of wealth make for a more comfortable retirement, but also it has been identified that it can help in extending the life expectancy of an individual. The richest man in the United States is expected to live 15 years longer than the poorest, while this gap is 10 years for women (Chetty et al., 2014). Chetty goes on to highlight how having more wealth gives access to better healthcare, healthier diets, and better fitness among other factors as shown in *Figure 1*.
 
-Figure 1: Mortality Rates Based Upon Income (Chetty et al.)![](Aspose.Words.5b431f01-7ae1-4ecd-b118-fe1512175c6f.001.jpeg)
+Figure 1: Mortality Rates Based Upon Income (Chetty et al.)![](Figure1.jpeg)
 
 A powerful tool for meeting one’s financial retirement goals is the stock market. It has historically had positive returns over a long time, and there are many different kinds of stocks for a person to invest into. For example, there are stocks that generate higher returns than average, but are also riskier. There are also stocks that have smaller returns than the market average, but have basically guaranteed returns. These many “risky” and “safe” stocks enable investors to construct unique stock portfolios to achieve their retirement goals.
 
@@ -57,7 +57,7 @@ The first data set to be analyzed was the life expectancy data from the Universi
 
 Oftentimes one piece of data such as flu vaccinations had multiple columns including percent of population, a numerator, a denominator, and a handful of confidence level columns. For this analysis, the percent of population was the most effective column type to be used. Some additional cleaning involved steps were that the second row in the data was not actual data and about 50 rows did not have life expectancy estimates. Given that life expectancy is the outcome variable, those rows were removed.
 
-![](Figure1.jpeg)
+![](README%20images/Figure2.jpeg)
 
 Figure 2: Life Expectancy Histogram
 
