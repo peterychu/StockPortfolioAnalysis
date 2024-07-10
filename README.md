@@ -26,7 +26,7 @@ Retirement is one of the largest lifestyle changes that an individual undergoes.
 
 Not only does a larger amount of wealth make for a more comfortable retirement, but also it has been identified that it can help in extending the life expectancy of an individual. The richest man in the United States is expected to live 15 years longer than the poorest, while this gap is 10 years for women (Chetty et al., 2014). Chetty goes on to highlight how having more wealth gives access to better healthcare, healthier diets, and better fitness among other factors as shown in *Figure 1*.
 
-Figure 1: Mortality Rates Based Upon Income (Chetty et al.)![](Figure1.jpeg)
+Figure 1: Mortality Rates Based Upon Income (Chetty et al.)![](README%20images/Figure1.jpeg)
 
 A powerful tool for meeting one’s financial retirement goals is the stock market. It has historically had positive returns over a long time, and there are many different kinds of stocks for a person to invest into. For example, there are stocks that generate higher returns than average, but are also riskier. There are also stocks that have smaller returns than the market average, but have basically guaranteed returns. These many “risky” and “safe” stocks enable investors to construct unique stock portfolios to achieve their retirement goals.
 
@@ -83,7 +83,7 @@ For each asset we chose to use monthly data starting from January 2004 to Decemb
 
 Table of calculated statistical metric
 
-![](README%20images/Aspose.Words.5b431f01-7ae1-4ecd-b118-fe1512175c6f.003.jpeg)
+![](README%20images/Figure3.jpeg)
 
 Figure 3: Statistical metrics of each asset
 
@@ -103,13 +103,13 @@ For reference, this website also describes each factor in detail.
 
 To predict an individual’s life expectancy, a linear regression was performed on the life expectancy data from the University of Wisconsin. In *figure 4*, all predictor variables besides a flu vaccination are significant at the 5% level. R-squared values indicate that the model can moderately predict the life expectancy based on these predictor variables. The sign of each coefficient makes logical sense with negative events like poor mental health days, smoking, heavy air pollution, and a long commute negatively affecting one’s life span. On the other hand, getting a flu vaccine and having a higher income leads to a longer life.
 
-![](Aspose.Words.5b431f01-7ae1-4ecd-b118-fe1512175c6f.004.png)
+![](README%20/Figure4.png)
 
 Figure 4: Life Expectancy Regression
 
 One important check when performing a linear regression is a multicollinearity test. Below is a correlation matrix between all of the predictor variables. The strongest correlations were poor mental health days/smoking and median income/smoking. A potential explanation is that lower income households are more likely to have individuals that smoke. Additionally, smoking can cause anxiety which can lead to having more poor mental health days.
 
-![](Aspose.Words.5b431f01-7ae1-4ecd-b118-fe1512175c6f.005.jpeg)
+![](README%20/Figure5.jpeg)
 
 Figure 5: Correlation Matrix
 
@@ -123,13 +123,13 @@ For this project, we have chosen to consider the entire U.S. population collecti
 
 This first step is accompanied by annual inflation rates to provide a better analysis. To calculate the annual inflation rate, multipliers were set in the model to see how much the price has changed month by month. Then a moving average was used to calculate the annual percentage change to smooth out short-term fluctuations and highlight longer-term trends in inflation, and then the mean was calculated.
 
-![](Aspose.Words.5b431f01-7ae1-4ecd-b118-fe1512175c6f.006.png)
+![](README%20/Figure6.png)
 
 Figure 6: Smoothed Yearly Inflation
 
 This was used to start the predictions for the average expense adjusted by the mean smoothed inflation change as shown above in *Figure 6*. A recursive calculation was used for each year from 2023 to 2042 as the chosen endpoint for our individual deciding to retire.
 
-![](Aspose.Words.5b431f01-7ae1-4ecd-b118-fe1512175c6f.007.png)
+![](README%20/Figure7.png)
 
 Figure 7: Sensitivity Analysis
 
@@ -139,7 +139,7 @@ At the end of our model, after deciding on a fixed annual percentage increase fo
 
 Continuing off our initial analysis of the individual 9 assets, we first visualize the cumulative returns of individual factors for the past 20 years. As in *Figure 8*, we observe the market factor to be the dominant winner, followed by the profitability factor.
 
-![](Aspose.Words.5b431f01-7ae1-4ecd-b118-fe1512175c6f.008.jpeg)
+![](README%20/Figure8.jpeg)
 
 Figure 8: Factor Cumulative Returns
 
@@ -147,7 +147,7 @@ For factor regression, we conduct 9 separate linear regressions using R lm() fun
 
 As shown in *Figure 9*, the market factor and the value factor proves to be significant for most assets. Some of the interesting observations are 1. Small cap fund (VSMCX) has higher beta to the market return, indicating it is riskier but can have more returns, which confirms intuition that smaller stocks may collapse more easily but when they blossom, their returns can be extraordinary. All the giants (e.g. Apple, Microsoft) were once smaller stocks. So it is a worthy consideration to allocate some of the capital to those small stocks via VSMCX fund. Another interesting observation is how XLP (consumer staples ETF) has lower beta coefficient to the CMA (investment aggressiveness) factor. This is because the consumer staple industry is “secular” (as in, relatively immune to the macro economic condition compared to other industry sectors) in nature. Another interesting observation is TLT’s market beta coefficient is slightly negative, which makes sense as TLT is essentially a “bond” ETF which historically has been known to have inverse correlation to the equity market.
 
-![](Aspose.Words.5b431f01-7ae1-4ecd-b118-fe1512175c6f.009.jpeg)
+![](README%20/Figure9.jpeg)
 
 Figure 9: Factor Regression Summary
 
@@ -165,7 +165,7 @@ Portfolio 4 | XLE 50% and XLP 50%. This is another approach to combining what is
 
 As shown in *Figure 10*, we plot the cumulative returns of those portfolios below. We observe the market portfolio performs the best (exceeding 800%) while others perform barely in a 425 ~ 535% range. It is worth noting that for the period of 2004 to 2015, the market portfolio was the least performant and even goes under water (reaching -15%) in 2008. Because the retirement investment considers the longer term result, the overall outperformance of the market portfolio still makes it the most viable choice.
 
-![](Aspose.Words.5b431f01-7ae1-4ecd-b118-fe1512175c6f.010.jpeg)
+![](README%20/Figure10.jpeg)
 
 Figure 10: Cumulative Portfolio Returns
 
@@ -175,13 +175,13 @@ In the next section, we further analyze this market portfolio by exploring diffe
 
 Now that we have our best performing portfolio from our initial portfolio list which consists of 50% IVV and 50% QQQ stocks, we can change the weights to see if we can achieve even higher monthly returns. To test this we use our original portfolio weights of 50% IVV / 50 QQQ%, 25% IVV / 75% QQQ and 75% IVV / 25% QQQ weights as well.
 
-![](Aspose.Words.5b431f01-7ae1-4ecd-b118-fe1512175c6f.011.jpeg) ![](Aspose.Words.5b431f01-7ae1-4ecd-b118-fe1512175c6f.012.png)
+![](README%20/Figure11.jpeg) ![](README%20/Figure12.png)
 
 Figure 11: Portfolio Growth
 
 Creating these 3 portfolios as shown in *Figure 11* and getting their average return, standard deviation, and plotting them we can see that a 25/75 split generates slightly higher returns. Thus, we will use this monthly return rate of 0.0114 when calculating the necessary amount of money needed at retirement so that when we invest in our portfolio, it will cover all annual expenses without the need to invest again. Basically, without touching the portfolio after investing the necessary amount, it will accrue enough returns on its own to cover all annual expenses until predicted death. For this project, we will assume that the annual expenses are equally spread out over the year. Thus, the monthly expenses will be $11,8553 / 12 = $9,879. Below is a plot showing the remaining balance of our best portfolio over the years past retirement.
 
-![](Aspose.Words.5b431f01-7ae1-4ecd-b118-fe1512175c6f.013.png)
+![](README%20/Figure13.png)
 
 Figure 12: Remaining Balance
 
@@ -195,9 +195,9 @@ This model predicts an exact answer for how much wealth an individual would need
 
 **Appendix**
 
-![](Aspose.Words.5b431f01-7ae1-4ecd-b118-fe1512175c6f.014.jpeg)
+![](README%20/Figure14.jpeg)
 
-![](Aspose.Words.5b431f01-7ae1-4ecd-b118-fe1512175c6f.015.jpeg)
+![](README%20/Figure15.jpeg)
 
 **[Reference/Citation]**
 
