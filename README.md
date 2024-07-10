@@ -83,7 +83,7 @@ For each asset we chose to use monthly data starting from January 2004 to Decemb
 
 Table of calculated statistical metric
 
-![](README images/Aspose.Words.5b431f01-7ae1-4ecd-b118-fe1512175c6f.003.jpeg)
+![]("README images/Aspose.Words.5b431f01-7ae1-4ecd-b118-fe1512175c6f.003.jpeg")
 
 Figure 3: Statistical metrics of each asset
 
