@@ -9,6 +9,7 @@ Retirement is one of the largest lifestyle changes that an individual undergoes.
 Not only does a larger amount of wealth make for a more comfortable retirement, but also it has been identified that it can help in extending the life expectancy of an individual. The richest man in the United States is expected to live 15 years longer than the poorest, while this gap is 10 years for women (Chetty et al., 2014). Chetty goes on to highlight how having more wealth gives access to better healthcare, healthier diets, and better fitness among other factors as shown in *Figure 1*.
 
 ![](README%20images/Figure1.jpeg)
+
 *Figure 1: Mortality Rates Based Upon Income (Chetty et al.)*
 
 A powerful tool for meeting one’s financial retirement goals is the stock market. It has historically had positive returns over a long time, and there are many different kinds of stocks for a person to invest into. For example, there are stocks that generate higher returns than average, but are also riskier. There are also stocks that have smaller returns than the market average, but have basically guaranteed returns. These many “risky” and “safe” stocks enable investors to construct unique stock portfolios to achieve their retirement goals.
@@ -42,7 +43,7 @@ Oftentimes one piece of data such as flu vaccinations had multiple columns inclu
 
 ![](README%20images/Figure2.jpeg)
 
-Figure 2: Life Expectancy Histogram
+*Figure 2: Life Expectancy Histogram*
 
 There were about 20 outlier points in the life expectancy data, as shown in *Figure 2*, as well with those counties having a life expectancy over 90 or under 67 that were removed. These counties did not have a large enough population to instill confidence in the validity of the numbers. Figure 2 above depicts life expectancy having a normal distribution.
 
@@ -68,7 +69,7 @@ Table of calculated statistical metric
 
 ![](README%20images/Figure3.jpeg)
 
-Figure 3: Statistical metrics of each asset
+*Figure 3: Statistical metrics of each asset*
 
 From these calculated metrics, we can choose how to build various portfolios for further analysis. Some initial insights, *Figure 3*, show that on average, most of our assets performed better than the market due to having Beta values greater than 1, but had higher risks as they had Sharpe Ratios higher than the market Sharpe Ratio. Another initial insight is that all of the assets have negative Sharpe and Treynor Ratios. This suggests that the risk free asset we used, 1 month maturity T-Bills, may be worthwhile to investigate. Using this information, we can perform more analysis on portfolios with different asset weights to best answer our research question.
 
