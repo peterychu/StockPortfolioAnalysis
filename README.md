@@ -87,15 +87,15 @@ For reference, this website also describes each factor in detail.
 
 To predict an individual’s life expectancy, a linear regression was performed on the life expectancy data from the University of Wisconsin. In *figure 4*, all predictor variables besides a flu vaccination are significant at the 5% level. R-squared values indicate that the model can moderately predict the life expectancy based on these predictor variables. The sign of each coefficient makes logical sense with negative events like poor mental health days, smoking, heavy air pollution, and a long commute negatively affecting one’s life span. On the other hand, getting a flu vaccine and having a higher income leads to a longer life.
 
-![](README%20/Figure4.png)
+![](README%20images/Figure4.png)
 
-Figure 4: Life Expectancy Regression
+*Figure 4: Life Expectancy Regression*
 
 One important check when performing a linear regression is a multicollinearity test. Below is a correlation matrix between all of the predictor variables. The strongest correlations were poor mental health days/smoking and median income/smoking. A potential explanation is that lower income households are more likely to have individuals that smoke. Additionally, smoking can cause anxiety which can lead to having more poor mental health days.
 
-![](README%20/Figure5.jpeg)
+![](README%20images/Figure5.jpeg)
 
-Figure 5: Correlation Matrix
+*Figure 5: Correlation Matrix*
 
 To dive deeper into the matter, a variance inflation factor calculation was run on the predictor variables. VIF values for all variables lie within the 1-5 range. According to literature, a VIF within this window indicates a moderate correlation between predictors, but not strong enough to justify removing any from the linear regression model. It can be concluded that the life expectancy model detailed in *Figure 3* is a valid model.
 
@@ -113,9 +113,9 @@ Figure 6: Smoothed Yearly Inflation
 
 This was used to start the predictions for the average expense adjusted by the mean smoothed inflation change as shown above in *Figure 6*. A recursive calculation was used for each year from 2023 to 2042 as the chosen endpoint for our individual deciding to retire.
 
-![](README%20/Figure7.png)
+![](README%20images/Figure7.png)
 
-Figure 7: Sensitivity Analysis
+*Figure 7: Sensitivity Analysis*
 
 At the end of our model, after deciding on a fixed annual percentage increase for the inflation rate as the median percentage, and after obtaining a median increase in expenses that an individual must face with data collected from 2004 to 2023, we used the median percentage obtained from the inflation increase as a fixed multiplier. This was multiplied by the annual percentage increase in expenses based on the last figure of 2023 as the starting point for our prediction of the average expenses in 2042 resulting in a predicted expense for 2042 of $118,553. There will continue to be inflation beyond 2042, but an individual can counteract this by purchasing treasury bonds.
 
@@ -123,17 +123,17 @@ At the end of our model, after deciding on a fixed annual percentage increase fo
 
 Continuing off our initial analysis of the individual 9 assets, we first visualize the cumulative returns of individual factors for the past 20 years. As in *Figure 8*, we observe the market factor to be the dominant winner, followed by the profitability factor.
 
-![](README%20/Figure8.jpeg)
+![](README%20images/Figure8.jpeg)
 
-Figure 8: Factor Cumulative Returns
+*Figure 8: Factor Cumulative Returns*
 
 For factor regression, we conduct 9 separate linear regressions using R lm() functions, where we regress the monthly returns of individual assets minus the risk free rate of returns to the monthly returns of the above five factors. The results of the regressions are summarized into a table below generated using the Stargazer package in R.
 
 As shown in *Figure 9*, the market factor and the value factor proves to be significant for most assets. Some of the interesting observations are 1. Small cap fund (VSMCX) has higher beta to the market return, indicating it is riskier but can have more returns, which confirms intuition that smaller stocks may collapse more easily but when they blossom, their returns can be extraordinary. All the giants (e.g. Apple, Microsoft) were once smaller stocks. So it is a worthy consideration to allocate some of the capital to those small stocks via VSMCX fund. Another interesting observation is how XLP (consumer staples ETF) has lower beta coefficient to the CMA (investment aggressiveness) factor. This is because the consumer staple industry is “secular” (as in, relatively immune to the macro economic condition compared to other industry sectors) in nature. Another interesting observation is TLT’s market beta coefficient is slightly negative, which makes sense as TLT is essentially a “bond” ETF which historically has been known to have inverse correlation to the equity market.
 
-![](README%20/Figure9.jpeg)
+![](README%20images/Figure9.jpeg)
 
-Figure 9: Factor Regression Summary
+*Figure 9: Factor Regression Summary*
 
 **Retirement Portfolio Selection**
 
@@ -149,9 +149,9 @@ Portfolio 4 | XLE 50% and XLP 50%. This is another approach to combining what is
 
 As shown in *Figure 10*, we plot the cumulative returns of those portfolios below. We observe the market portfolio performs the best (exceeding 800%) while others perform barely in a 425 ~ 535% range. It is worth noting that for the period of 2004 to 2015, the market portfolio was the least performant and even goes under water (reaching -15%) in 2008. Because the retirement investment considers the longer term result, the overall outperformance of the market portfolio still makes it the most viable choice.
 
-![](README%20/Figure10.jpeg)
+![](README%20images/Figure10.jpeg)
 
-Figure 10: Cumulative Portfolio Returns
+*Figure 10: Cumulative Portfolio Returns*
 
 In the next section, we further analyze this market portfolio by exploring different weights of underlying assets and also explore a more elaborate scenario where we assume new cash flow gets injected into the portfolio on a regular basis, which more realistically represents how a typical retirement account is managed (i.e. people contribute little by little per paycheck over time).
 
@@ -159,15 +159,15 @@ In the next section, we further analyze this market portfolio by exploring diffe
 
 Now that we have our best performing portfolio from our initial portfolio list which consists of 50% IVV and 50% QQQ stocks, we can change the weights to see if we can achieve even higher monthly returns. To test this we use our original portfolio weights of 50% IVV / 50 QQQ%, 25% IVV / 75% QQQ and 75% IVV / 25% QQQ weights as well.
 
-![](README%20/Figure11.jpeg) ![](README%20/Figure12.png)
+![](README%20images/Figure11.jpeg) ![](README%20/Figure12.png)
 
-Figure 11: Portfolio Growth
+*Figure 11: Portfolio Growth*
 
 Creating these 3 portfolios as shown in *Figure 11* and getting their average return, standard deviation, and plotting them we can see that a 25/75 split generates slightly higher returns. Thus, we will use this monthly return rate of 0.0114 when calculating the necessary amount of money needed at retirement so that when we invest in our portfolio, it will cover all annual expenses without the need to invest again. Basically, without touching the portfolio after investing the necessary amount, it will accrue enough returns on its own to cover all annual expenses until predicted death. For this project, we will assume that the annual expenses are equally spread out over the year. Thus, the monthly expenses will be $11,8553 / 12 = $9,879. Below is a plot showing the remaining balance of our best portfolio over the years past retirement.
 
-![](README%20/Figure13.png)
+![](README%20images/Figure13.png)
 
-Figure 12: Remaining Balance
+*Figure 12: Remaining Balance*
 
 As we can see in *Figure 12*, the longer a person is expected to live past retirement, the more money they will need at retirement. However, once this goal is reached and invested, it will cover all annual expenses until their predicted death. How a person achieves this goal can be answered similarly to how we calculated this goal. A person has X years before they hit retirement age, and thus can use our portfolio investment methodology to calculate how to achieve such a goal.
 
@@ -179,9 +179,9 @@ This model predicts an exact answer for how much wealth an individual would need
 
 **Appendix**
 
-![](README%20/Figure14.jpeg)
+![](README%20images/Figure14.jpeg)
 
-![](README%20/Figure15.jpeg)
+![](README%20images/Figure15.jpeg)
 
 **[Reference/Citation]**
 
