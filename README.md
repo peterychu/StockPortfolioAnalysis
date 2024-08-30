@@ -2,24 +2,6 @@
 
 **MGT 6203: Data Analytics in Business Spring 2024**
 
-**Team 6 Final Project Report:**
-
-Optimizing Retirement Investments for Long-Term Sustainability
-
-**Team Members:**
-
-Member 1 : Austin Franks | Edx username: austin\_franks22 | GitHub username: Austin-Franks
-
-Member 2 : Elson Dauti | Edx username: elsondauti | GitHub username: edauti91
-
-Member 3 : Peter Chu | Edx username: pychu\_2 | GitHub username: peterychu
-
-Member 4 : Kenichi (Ken) Sugimoto | Edx username: sptd | GitHub username: etlfs
-
-Member 5 : Suleman Shehzad | Edx username: sulemanshehzad
-
-\***Note**: Suleman Shehzad withdrew from the course in March. **Project Repository:[ Team 6 on GitHub](https://github.com/MGT-6203-Spring-2024-Edx/Team-6)**
-
 **Background/Problem Statement**
 
 Retirement is one of the largest lifestyle changes that an individual undergoes. An average American citizen is expected to live 20 years beyond their retirement date where they must find a way to provide for themselves without employment. Retirement can be a celebration of the beginning of a new chapter in life, but also can be stressful if one is not financially prepared for it. The median wealth for an individual of retirement age is $52,000 (Poterba, 2014) leaving them heavily reliant upon programs like Social Security to cover expenses. Such a low amount of wealth can be attributed to various factors such as high cost of living, low compensation, lack of steady employment, poor financial planning, or lack of optimal financial investing. This project hones in on optimizing financial investing to improve quality of life in retirement.
