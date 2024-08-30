@@ -9,10 +9,15 @@ Optimizing Retirement Investments for Long-Term Sustainability
 Team Members:
 
 Member 1 : Austin Franks
+
 Member 2 : Elson Dauti
+
 Member 3 : Peter Chu
+
 Member 4 : Kenichi (Ken) Sugimoto
+
 Member 5 : Suleman Shehzad
+
 *Note: Suleman Shehzad withdrew from the course in March.
 
 **Background/Problem Statement**
