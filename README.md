@@ -6,17 +6,7 @@ Team 6 Final Project Report:
 
 Optimizing Retirement Investments for Long-Term Sustainability
 
-Team Members:
-
-Member 1 : Austin Franks
-
-Member 2 : Elson Dauti
-
-Member 3 : Peter Chu
-
-Member 4 : Kenichi (Ken) Sugimoto
-
-Member 5 : Suleman Shehzad
+Team Members: Austin Franks, Elson Dauti, Peter Chu, Kenichi (Ken) Sugimoto, Suleman Shehzad
 
 *Note: Suleman Shehzad withdrew from the course in March.
 
