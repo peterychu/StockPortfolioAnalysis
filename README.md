@@ -2,6 +2,19 @@
 
 **MGT 6203: Data Analytics in Business Spring 2024**
 
+Team 6 Final Project Report:
+
+Optimizing Retirement Investments for Long-Term Sustainability
+
+Team Members:
+
+Member 1 : Austin Franks
+Member 2 : Elson Dauti
+Member 3 : Peter Chu
+Member 4 : Kenichi (Ken) Sugimoto
+Member 5 : Suleman Shehzad
+*Note: Suleman Shehzad withdrew from the course in March.
+
 **Background/Problem Statement**
 
 Retirement is one of the largest lifestyle changes that an individual undergoes. An average American citizen is expected to live 20 years beyond their retirement date where they must find a way to provide for themselves without employment. Retirement can be a celebration of the beginning of a new chapter in life, but also can be stressful if one is not financially prepared for it. The median wealth for an individual of retirement age is $52,000 (Poterba, 2014) leaving them heavily reliant upon programs like Social Security to cover expenses. Such a low amount of wealth can be attributed to various factors such as high cost of living, low compensation, lack of steady employment, poor financial planning, or lack of optimal financial investing. This project hones in on optimizing financial investing to improve quality of life in retirement.
